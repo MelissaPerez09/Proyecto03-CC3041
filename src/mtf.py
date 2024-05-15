@@ -18,7 +18,7 @@ initial_list = [0, 1, 2, 3, 4]
 #request_sequence = [0] * 20
 
 # -- 4 ---
-#request_sequence = [4, 3, 2, 1, 0, 4, 3, 2, 1, 0, 4, 3, 2, 1, 0, 4, 3, 2, 1, 0, 4, 3, 2, 1, 0]
+#request_sequence = [4, 3, 2, 1, 0, 4, 3, 2, 1, 0, 4, 3, 2, 1, 0, 4, 3, 2, 1, 0]
 
 # -- 5 ---
 request_sequence = [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
@@ -52,8 +52,6 @@ def move_to_front(sequence, requests):
 total_cost, configurations, costs = move_to_front(initial_list, request_sequence)
 
 # Impresión de resultados
-print(f"Lista de configuración inicial: {initial_list}\n")
-
 for element, cost, config in zip(request_sequence, costs, configurations):
     print(f"Solicitud: {element} \t Costo: {cost} \t Configuración de la lista: {config}")
 
